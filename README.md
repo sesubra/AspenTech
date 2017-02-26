@@ -6,10 +6,12 @@ Project solutions for problems given by AspenTech. Submitted by Senthil Subraman
 ##Grams Converter
 
 #####Assumptions
-    1. Periodic table details will be read from a file named `periodicTable.json` from the same folder as the 
+List of assumptions made in this project
+
+    * Periodic table details will be read from a file named `periodicTable.json` from the same folder as the 
     	executable
-	2. User's input will be read from a file named `userInput.json` from the same folder as the executable
-	3. No UI is needed or this program
+	* User's input will be read from a file named `userInput.json` from the same folder as the executable
+	* No UI is needed or this program
 
 #####Program Operation
 	- Program will calculate the total weight of the components specified in the `userInput.json` file and will terminate. Single use.
