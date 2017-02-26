@@ -53,6 +53,7 @@ namespace GramsConversion
 
         public void PrintUserInputDetails()
         {
+            ConsoleHelper.PrintMessage($"User input has \"{this.Components.Length}\" components.");
             this.Components.ToList().ForEach(c =>
             {
                 ConsoleHelper.PrintInfo($"Component Name: {c.Name}, Mass: {c.Mass}, Units: {c.Unit}");

@@ -58,7 +58,13 @@ namespace GramsConversion
         {
             //read the periodic table element values from JSON file
             //REFER: JSON file from https://github.com/diniska/chemistry/blob/master/PeriodicalTable/periodicTable.json
-            var periodicTable = JsonConvert.DeserializeObject<PeriodicTable>(System.IO.File.ReadAllText("periodicTable.json"), settings);
+            var periodicTableText = System.IO.File.ReadAllText("periodicTable.json");
+            if(periodicTableText.Length == 0)
+            {
+                ConsoleHelper.PrintError($"USer input file \"periodicTable.json\" is an empty file.");
+                Environment.Exit(0);
+            }
+            var periodicTable = JsonConvert.DeserializeObject<PeriodicTable>(periodicTableText, settings);
 
             //Set the periodic table as a static fieild to be able to access from anywhere
             PeriodicTableWrapper.PeriodicTable = periodicTable;

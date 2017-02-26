@@ -15,7 +15,13 @@ namespace GramsConversion
             //Make sure the input file exists
             if(System.IO.File.Exists("periodicTable.json") == false || System.IO.File.Exists("userInput.json") == false)
             {
-                ConsoleHelper.PrintError($"Either \"periiodicTable.json\" or \"userInput.json\" is not found");
+                ConsoleHelper.PrintError($"Either one or both files \"periiodicTable.json\" and \"userInput.json\" is not found.");
+                Environment.Exit(0);
+            }
+
+            if(new System.IO.FileInfo("periodicTable.json").Length == 0 || new System.IO.FileInfo("userInput.json").Length == 0)
+            {
+                ConsoleHelper.PrintError($"Either one or both files \"periiodicTable.json\" and \"userInput.json\" an empty file.");
                 Environment.Exit(0);
             }
 
@@ -33,7 +39,13 @@ namespace GramsConversion
             PeriodicTableWrapper.LoadPeriodicTableFromJSON(serializerSettings);
 
             //read the user's input from JSON file
-            var userInput = JsonConvert.DeserializeObject<UserInput>(System.IO.File.ReadAllText("userInput.json"), serializerSettings);
+            var userInputfile = System.IO.File.ReadAllText("userInput.json");
+            if (userInputfile.Length == 0)
+            {
+                ConsoleHelper.PrintError($"User input file \"userInput.json\" is an empty file.");
+                Environment.Exit(0);
+            }
+            var userInput = JsonConvert.DeserializeObject<UserInput>(userInputfile, serializerSettings);
 
             //Validate the user input's every component matching against the periodic table values
             var invalidComponents = userInput.ValidateComponents();

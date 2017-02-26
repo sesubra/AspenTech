@@ -11,6 +11,7 @@ List of assumptions made in this project
 * Periodic table details will be read from a file named `periodicTable.json` from the same folder as the executable
 * User's input will be read from a file named `userInput.json` from the same folder as the executable
 * No UI is needed or this program
+* USer input with no components is considered valid input
 
 #####Program Operation
 * Program will calculate the total weight of the components specified in the `userInput.json` file and will terminate. Single use.
