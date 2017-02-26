@@ -6,9 +6,9 @@ Project solutions for problems given by AspenTech. Submitted by Senthil Subraman
 ##Grams Converter
 
 ###Assumptions
-	- Periodic table details will be read from a file named `periodicTable.json` from the same folder as the executable
-	- User's input will be read from a file named `userInput.json` from the same folder as the executable
-	- No UI is needed or this program
+	* Periodic table details will be read from a file named `periodicTable.json` from the same folder as the executable
+	* User's input will be read from a file named `userInput.json` from the same folder as the executable
+	* No UI is needed or this program
 
 ###Program Operation
 	- Program will calculate the total weight of the components specified in the `userInput.json` file and will terminate. Single use.
@@ -37,7 +37,7 @@ Project solutions for problems given by AspenTech. Submitted by Senthil Subraman
 	- Once the user removes an edge, the program will show all the disconnected edge
 	- Program terminates when the user inputs a non-existing node or empty
 	- When a user removes an additional edge, program includes all the disconnected nodes (including the disconnected ones from removing edges from the previous steps)
-	
+
 ###Recommendation
 	- Use console window with Black background
 
