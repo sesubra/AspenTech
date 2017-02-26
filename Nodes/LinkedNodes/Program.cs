@@ -22,6 +22,12 @@ namespace LinkedNodes
                 Environment.Exit(0);
             }
 
+            if(new System.IO.FileInfo("nodestructure.json").Length == 0)
+            {
+                ConsoleHelper.PrintError("File is empty: nodestructure.json");
+                Environment.Exit(0);
+            }
+
             //Serializer settings to handle any malformed json file input
             var serializerSettings = new JsonSerializerSettings();
             serializerSettings.Error = (object sender, ErrorEventArgs errorArgs) =>
@@ -31,7 +37,14 @@ namespace LinkedNodes
                 errorArgs.ErrorContext.Handled = true;
                 Environment.Exit(0);
             };
-            var nodesInput = JsonConvert.DeserializeObject<NodeStructureInput>(System.IO.File.ReadAllText("nodestructure.json"), serializerSettings);
+
+            var nodeInputText = System.IO.File.ReadAllText("nodestructure.json");
+            if(nodeInputText.Length == 0)
+            {
+                ConsoleHelper.PrintError("File is empty: nodestructure.json");
+                Environment.Exit(0);
+            }
+            var nodesInput = JsonConvert.DeserializeObject<NodeStructureInput>(nodeInputText, serializerSettings);
 
             //Successful deserialization of JSON input file
             NodesList nodesList = new NodesList();

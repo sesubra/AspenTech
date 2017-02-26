@@ -20,7 +20,7 @@ List of assumptions made in this project
 * Compatible only with Windows OS
 
 #####Recommendation
-* Use console window with Black background
+* Use console window with Black background & Silver foreground
 
 
 ##Nodes
@@ -42,4 +42,4 @@ List of assumptions made in this project
 * When a user removes an additional edge, program includes all the disconnected nodes (including the disconnected ones from removing edges from the previous steps)
 
 #####Recommendation
-* Use console window with Black background
+* Use console window with Black background & Silver foreground
