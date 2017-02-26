@@ -2,7 +2,7 @@
 Project solutions for problems given by AspenTech. Submitted by Senthil Subramanian
 
 # Dependencies
-Both `Grams Converter` and `Nodes` projects depend on Newtonsoft's Json.NET library to parse the input json file content to C# object structure
+Both `Grams Conversion` and `Nodes` projects depend on Newtonsoft's Json.NET library to parse the input json file content to C# object structure
 
 # Assumptions
 
