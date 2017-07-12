@@ -9,6 +9,7 @@ namespace LinkedNodes.Models
     ///BAsic Link model
     public class Link
     {
+        //Hotfix i am doing .... 
         public Link(string nodeId)
         {
             this.NodeId = nodeId;
