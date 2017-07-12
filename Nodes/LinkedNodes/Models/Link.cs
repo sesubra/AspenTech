@@ -11,6 +11,7 @@ namespace LinkedNodes.Models
     {
         //default constructor (2)
         //more construtors needed
+        //Hotfix i am doing .... 
         public Link(string nodeId)
         {
             this.NodeId = nodeId;
