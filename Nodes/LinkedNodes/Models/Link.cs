@@ -9,6 +9,8 @@ namespace LinkedNodes.Models
     ///BAsic Link model
     public class Link
     {
+        //default constructor (2)
+        //more construtors needed
         //Hotfix i am doing .... 
         public Link(string nodeId)
         {
