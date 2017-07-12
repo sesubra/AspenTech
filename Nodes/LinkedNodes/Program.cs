@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace LinkedNodes
 {
+    ///Linked nodes program file
     class Program
     {
         static void Main(string[] args)
@@ -29,6 +30,7 @@ namespace LinkedNodes
             }
 
             //Serializer settings to handle any malformed json file input
+            //Added more comments
             var serializerSettings = new JsonSerializerSettings();
             serializerSettings.Error = (object sender, ErrorEventArgs errorArgs) =>
             {

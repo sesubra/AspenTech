@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace LinkedNodes.Models
 {
+    //Basic node model
     public class Node
     {
+        //Default Constructor
         public Node(string id)
         {
             this.Id = id;
