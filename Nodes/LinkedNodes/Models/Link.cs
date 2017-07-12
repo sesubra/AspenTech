@@ -10,6 +10,7 @@ namespace LinkedNodes.Models
     public class Link
     {
         //default constructor (2)
+        //more construtors needed
         public Link(string nodeId)
         {
             this.NodeId = nodeId;
