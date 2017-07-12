@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedNodes.Models
 {
+    ///BAsic Link model
     public class Link
     {
         public Link(string nodeId)

@@ -30,6 +30,7 @@ namespace LinkedNodes
             }
 
             //Serializer settings to handle any malformed json file input
+            //Added more comments
             var serializerSettings = new JsonSerializerSettings();
             serializerSettings.Error = (object sender, ErrorEventArgs errorArgs) =>
             {
