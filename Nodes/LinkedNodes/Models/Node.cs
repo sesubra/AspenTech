@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace LinkedNodes.Models
 {
     //Basic node model
+    //part 2: comments
     public class Node
     {
         //Default Constructor
