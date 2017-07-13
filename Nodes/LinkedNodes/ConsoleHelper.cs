@@ -9,6 +9,7 @@ namespace LinkedNodes
     //Console helper class - feature 4
     public static class ConsoleHelper
     {
+        //this is hotfix 4
         public static void PrintError(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
@@ -17,6 +18,7 @@ namespace LinkedNodes
             return;
         }
 
+        //this is hotfix 4
         public static void PrintSuccess(string message)
         {
             Console.ForegroundColor = ConsoleColor.Green;

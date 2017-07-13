@@ -29,6 +29,7 @@ namespace LinkedNodes.InputModels
     }
     //sample one here as well
     //Node structure input
+    //this is also hotfix 4
     public class NodeStructureInput
     {
         [JsonProperty("root")]
