@@ -27,7 +27,7 @@ namespace LinkedNodes.InputModels
         [JsonRequired]
         public string To { get; set; }
     }
-
+    //this is also hotfix 4
     public class NodeStructureInput
     {
         [JsonProperty("root")]
