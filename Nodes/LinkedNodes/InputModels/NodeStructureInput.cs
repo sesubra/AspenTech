@@ -14,6 +14,8 @@ namespace LinkedNodes.InputModels
         public string Id { get; set; }
     }
 
+    //EdgeInput hotfix 2
+    //second part hotfix
     public class EdgeInput
     {
         [JsonProperty("from")]
