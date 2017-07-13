@@ -20,6 +20,7 @@ namespace LinkedNodes.InputModels
     //second part hotfix
     public class EdgeInput
     {
+        //REquired property
         [JsonProperty("from")]
         [JsonRequired]
         public string From { get; set; }
