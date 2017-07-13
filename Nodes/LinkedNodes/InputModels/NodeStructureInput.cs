@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace LinkedNodes.InputModels
 {
+    ///Node Input
     public class NodeInput
     {
         [JsonProperty("id")]
@@ -14,6 +15,7 @@ namespace LinkedNodes.InputModels
         public string Id { get; set; }
     }
 
+    //THIS IS AN EDGE INPUT NODE
     //EdgeInput hotfix 2
     //second part hotfix
     public class EdgeInput
