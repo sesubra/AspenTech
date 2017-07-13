@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedNodes
 {
+    //Console helper class - feature 4
     public static class ConsoleHelper
     {
         //this is hotfix 4
