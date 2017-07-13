@@ -24,6 +24,7 @@ namespace LinkedNodes.InputModels
         [JsonProperty("from")]
         [JsonRequired]
         public string From { get; set; }
+        //required TO property
         [JsonProperty("to")]
         [JsonRequired]
         public string To { get; set; }
