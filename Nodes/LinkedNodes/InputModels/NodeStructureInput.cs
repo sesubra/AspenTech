@@ -27,7 +27,8 @@ namespace LinkedNodes.InputModels
         [JsonRequired]
         public string To { get; set; }
     }
-
+    //sample one here as well
+    //Node structure input
     public class NodeStructureInput
     {
         [JsonProperty("root")]
