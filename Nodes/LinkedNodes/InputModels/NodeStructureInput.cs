@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace LinkedNodes.InputModels
 {
+    ///Node Input
     public class NodeInput
     {
         [JsonProperty("id")]
